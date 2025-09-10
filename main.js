@@ -1,6 +1,6 @@
 'use strict'
 
-function criarImagem (urlImagem){
+function criarImagem (Imagem){
     const galeria = document.getElementById('galeria')
     
     const img = document.createElement('img')
