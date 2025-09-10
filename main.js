@@ -2,10 +2,18 @@
 
 function criarImagem (urlImagem){
     const galeria = document.getElementById('galeria')
-    const img =  document.createElement('img')
-    img.src = urlImagem
+    
+    const img = document.createElement('img')
+    const nome = document.createElement('p')
+
+    img.src = Imagem.url
+    img.alt = Imagem.nome
+    nome.textContent = Imagem.nome
+    nome.classList.add("p")
+
 
     galeria.appendChild(img)
+    galeria.appendChild(nome)
 
 
 }
